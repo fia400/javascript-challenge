@@ -25,19 +25,13 @@ var addData = (dataInput) => {
 addData(tableData);
 
 
-// Setting up the Filter Button for Date and City
+// Setting up the Filter Button for Date and City - button
 button.on("click", () => {
 
     d3.event.preventDefault();
     
 
     var inputDate = inputFieldDate.property("value").trim();
-    // console.log(inputDate)
-    // console.log(inputCity)
-    // var inputState = inputFieldState.property("value").toLowerCase().trim();
-    // var inputCountry = inputFieldCountry.property("value").toLowerCase().trim();
-    // var inputShape = inputFieldShape.property("value").toLowerCase().trim();
-    
 
     var filterDate = tableData.filter(tableData => tableData.datetime === inputDate);
     
